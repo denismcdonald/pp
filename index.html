@@ -16,6 +16,21 @@
       font-family: 'Fraunces', 'Georgia', serif;
     }
   </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const button = form.querySelector("button[type='submit']");
+
+    form.addEventListener("submit", function () {
+      button.disabled = true;
+      button.innerText = "Submitting…";
+      button.classList.add("opacity-60", "cursor-not-allowed");
+    });
+  });
+</script>
+
+
 </head>
 
 <body style="background-color: #fcfbf7;" class="text-stone-800 flex flex-col items-center justify-center min-h-screen px-4 py-10">
