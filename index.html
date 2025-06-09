@@ -1,29 +1,59 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" rel="stylesheet"> 
-    <title>penpals.ink</title>
-    <style>
-      /* :root { font-size: calc(0.8em + 1vw); } --> */
-      body { background-color: #fff; color: #000; font-family: "Amatic SC"; }
-      h1 { color: #000; font-size: 6rem; font-weight: 700; margin: 0; }
-      #i { color: #3c83ca; }
-      #n { color: #6898c9; }
-      #k { color: #92afcc; }
-      h2 { color: #000; font-family: "Gaegu"; font-size: 2rem; font-weight: 700; margin-top: 0.5rem; }
-      div { margin: 20% auto; text-align: center; }
-    </style>
-  </head>
-  <body>
-    <div class="vert">
-      <h1>penpals.<span id="i">i</span><span id="n">n</span><span id="k">k</span</h1>
-      <h2>...is being written :)</h2>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow">
+  <title>penpals.ink – Coming Soon</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fraunces', 'Georgia', serif;
+    }
+  </style>
+</head>
+
+<body style="background-color: #fcfbf7;" class="text-stone-800 flex flex-col items-center justify-center min-h-screen px-4 py-10">
+  <main class="max-w-xl w-full text-center space-y-6">
+  <img src="snail.jpg" alt="A snail carrying a mail satchel labeled POST" class="mx-auto mb-6 w-32 h-auto" />
+    <h1 class="text-4xl tracking-tight">penpals<span class="font-bold">.ink</span></h1>
+    <p class="text-lg italic text-stone-600">A quiet site for finding a penpal. <br>No ads, no algorithms, no subscriptions.</p>
+
+    <p class="mt-6 text-base">
+      ✉️ This project is under construction.<br> If you'd like to know when it launches, enter your email below.
+    </p>
+
+    <form action="https://formspree.io/f/xldnjjgo" method="POST"
+      class="flex flex-col sm:flex-row items-center justify-center gap-3">
+      <input type="email" name="email" placeholder="you@example.com" required
+        class="w-full sm:w-auto px-4 py-2 rounded border border-stone-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-stone-400" />
+      <button type="submit" class="px-5 py-2 bg-stone-800 text-white rounded shadow hover:bg-stone-700 transition">
+        Notify Me
+      </button>
+    </form>
+
+    <p class="text-sm text-stone-500">
+      (No spam. Just one email when the site is ready.)
+    </p>
+
+    <hr class="border-stone-300 my-6" />
+
+    <p class="text-base">
+      Curious in the meantime?<br />
+      You can visit the <a href="https://penpals-ink.onrender.com"
+        class="text-stone-700 underline hover:text-stone-900">prototype here</a>.
+    </p>
+
+    <footer class="mt-10 text-sm text-stone-400">
+      &copy;
+      <script>document.write(new Date().getFullYear())</script> penpals.ink
+    </footer>
+  </main>
+</body>
+
 </html>
